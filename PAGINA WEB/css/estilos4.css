@@ -1,0 +1,133 @@
+body{
+    font-family: verdana;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.header-fix{
+    background: rgb(243, 186, 179);
+    color: black;
+    padding: 0.6rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+main{
+    padding-top: 10rem;
+}
+
+.header-fix a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    letter-spacing: 5px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background: #ccc;
+}
+
+.logo{
+    width: 25%;
+}
+
+/*GALERIA, AVANCES*/
+
+.portafolio{
+    background: #fff;
+}
+
+.titulo{
+    color: rgb(126, 236, 203);
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+section{
+    padding-top: 10rem;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: escale(0);
+    background: hsla(273, 91%, 27%, o.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: rgb(105, 202, 147);
+    font-size: 30px;
+    text-align: center;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(0);
+}
